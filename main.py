@@ -42,16 +42,10 @@ while True:
             print("★ 결합 성공! H2O 완료 ★")
             sphere(pos=vector(0, -4, 0), radius=1.5, color=color.blue)
     elif ev.key == 'e':
-
-
-
-
-
-
-
-
-     $H_2O_2$ (과산화수소) $NaClO$ (차아염소산나트륨) $NaOH$ (수산화나트륨 / 가성소다)
         else:
             print("결합 실패!")
-            
-        my_choice = []
+
+
+
+
+CH_4 (메테인) CO_2 (이산화탄소) NaHCO_3 (탄산수소나트륨)(소화액) H_2O_2 (과산화수소)(소독약;빨간약)  NaCl (차아염소산나트륨)(락스) HCl (염화수소 / 염산) NaOH(수산화나트륨 / 가성소다)(비누)
