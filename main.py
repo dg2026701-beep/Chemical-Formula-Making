@@ -42,7 +42,15 @@ while True:
             print("★ 결합 성공! H2O 완료 ★")
             sphere(pos=vector(0, -4, 0), radius=1.5, color=color.blue)
     elif ev.key == 'e':
-        
+
+
+
+
+
+
+
+
+     $H_2O_2$ (과산화수소) $NaClO$ (차아염소산나트륨) $NaOH$ (수산화나트륨 / 가성소다)
         else:
             print("결합 실패!")
             
