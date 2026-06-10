@@ -72,3 +72,5 @@ while True:
             print("결합 실패!")
             
         my_choice = []
+
+https://www.glowscript.org/#/user/dg2026701/folder/MyPrograms/program/260602
