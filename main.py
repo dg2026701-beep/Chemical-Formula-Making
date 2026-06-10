@@ -11,7 +11,7 @@ balls.append(sphere(pos=vector(2.5, 0, 0), texture= "https://upload.wikimedia.or
 balls.append(sphere(pos=vector(5, 0, 0), texture= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAf-bd-0WCVJRGqoxWiZL78U18IHj3XuVxYg&s"))
 balls.append(sphere(pos=vector(7.5, 0, 0), texture= "https://www.shutterstock.com/image-vector/nitrogen-chemical-element-icon-round-260nw-2138931285.jpg"))
  
-a = arrow(pos=vector(0, 3, 0), axis=vector(0, -1, 0), color=color.green)
+a = arrow(pos=vector(-7.5, 3, 0), axis=vector(0, -1, 0), color=color.green)
 
 current_index = 0
 
@@ -46,26 +46,29 @@ while True:
         
         if h_count == 2 and o_count == 1:
             print("★ 결합 성공! 물 생성 완료 ★ ")
-            sphere(pos=vector(0, -4, 0), texture = "https://cdn.ecocody.co.kr/news/photo/202304/4432_10130_335.jpg")
+            sphere(pos=vector(0, -4, 0), texture = "https://cdn.ecocody.co.kr/news/photo/202304/4432_10130_335.jpg", size = vec(3,3,3))
             
         elif cl_count == 1 and na_count ==1:
             print("★ 결합 성공! 소금 생성 완료 ★ "  )
-            sphere(pos=vector(0, -4, 0), texture = "https://png.pngtree.com/png-clipart/20241121/original/pngtree-salt-png-image_17278352.png")
+            box(pos=vector(0, -4, 0), texture = "https://png.pngtree.com/png-clipart/20241121/original/pngtree-salt-png-image_17278352.png", size = vec(3,3,3))
         
         elif o_count == 2 and c_count ==1:
             print("★ 결합 성공! 이산화탄소 생성 완료 ★ " )
-            sphere(pos=vector(0, -4, 0), texture = "https://image.dongascience.com/Photo/2019/01/919f8ff9d2e91a764981fdfd9c22b717.jpg")
+            box(pos=vector(0, -4, 0), texture = "https://image.dongascience.com/Photo/2019/01/919f8ff9d2e91a764981fdfd9c22b717.jpg", size = vec(3,3,3))
         
         elif o_count == 2 and h_count ==2:
             print("★ 결합 성공! 빨간약 생성 완료 ★ ")
-            box(pos=vector(0, -4, 0), texture = "https://wimg.sedaily.com/news/legacy/2020/10/08/1Z91U7FT4M_1.jpg")
+            box(pos=vector(0, -4, 0), texture = "https://wimg.sedaily.com/news/legacy/2020/10/08/1Z91U7FT4M_1.jpg", size = vec(3,3,3))
+            
+        elif h_count == 4 and c_count ==1:
+            print("★ 결합 성공! 가스 생성 완료 ★ ")
+            box(pos=vector(0, -4, 0), texture = "https://st5.depositphotos.com/73092130/80931/v/450/depositphotos_809318060-stock-illustration-methane-ch4-cloud-blue-black.jpg", size = vec(3,3,3))
+            
+        elif h_count == 3 and n_count ==1:
+            print("★ 결합 성공! 비료 생성 완료 ★")
+            box(pos=vector(0, -4, 0), size = vec(3,3,3), texture = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXMw4jdAfoLuP2E2h0jHvFJRmenMsVM9KsMg&s")
         
         else:
             print("결합 실패!")
             
         my_choice = []
-
-
-
-CH_4 (메테인)(가스) CO_2 (이산화탄소) NaHCO_3 (탄산수소나트륨)(소화액) H_2O_2 (과산화수소)(소독약;빨간약)  NaCl (차아염소산나트륨)(락스) N_2O (아산화질소)(웃음이나는 마취제가스)
-HCl (염화수소 / 염산) NaOH(수산화나트륨 / 가성소다)(비누) NH_3 (암모니아)(비료)$HCN$ (사이안화수소)(독성가스) NaNO_3 (질산나트륨)(소세지에 들어가는 빨간색 발색제)
